@@ -45,7 +45,7 @@ public:
         qreal shapeFactor;
 
         // How much the transformed window should be raised.
-        int bumpDistance;
+        qreal bumpDistance;
     };
 
     explicit Model(KWin::EffectWindow* window = nullptr);

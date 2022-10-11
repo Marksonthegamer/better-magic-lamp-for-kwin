@@ -162,7 +162,7 @@ void YetAnotherMagicLampEffect::paintWindow(KWin::EffectWindow* w, int mask, QRe
     KWin::effects->paintWindow(w, mask, clip, data);
 }
 
-void YetAnotherMagicLampEffect::deform(KWin::EffectWindow* window, int mask, KWin::WindowPaintData& data, KWin::WindowQuadList& quads)
+void YetAnotherMagicLampEffect::apply(KWin::EffectWindow* window, int mask, KWin::WindowPaintData& data, KWin::WindowQuadList& quads)
 {
     Q_UNUSED(mask)
     Q_UNUSED(data)
@@ -198,7 +198,7 @@ void YetAnotherMagicLampEffect::slotWindowMinimized(KWin::EffectWindow* w)
         return;
     }
 
-    const QRect iconRect = w->iconGeometry();
+    const QRectF iconRect = w->iconGeometry();
     if (!iconRect.isValid()) {
         return;
     }
@@ -220,7 +220,7 @@ void YetAnotherMagicLampEffect::slotWindowUnminimized(KWin::EffectWindow* w)
         return;
     }
 
-    const QRect iconRect = w->iconGeometry();
+    const QRectF iconRect = w->iconGeometry();
     if (!iconRect.isValid()) {
         return;
     }
