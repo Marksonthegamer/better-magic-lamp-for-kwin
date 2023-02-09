@@ -28,7 +28,7 @@ sudo zypper in -r trmdi kwin-effects-yaml
 
 You will need the following dependencies to build this effect:
 * CMake
-* any C++14 enabled compiler
+* any C++20 enabled compiler
 * Qt
 * libkwineffects
 * KDE Frameworks 5:
