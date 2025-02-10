@@ -2,6 +2,7 @@
 
 Added non-linear curves to the animations including shrinking, bumping and more.
 
+![Screenshot](doc/untitled.gif)
 
 This is a window minimization effect for KWin. Whenever a window
 is minimized, it'll get sucked down into the dock/panel, **with a
