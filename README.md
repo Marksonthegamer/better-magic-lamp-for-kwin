@@ -1,30 +1,21 @@
-# Yet Another Magic Lamp
+# The replacement for Kwin project "Yet Another Magic Lamp".
 
-![Screenshot](doc/Screenshot.png)
+Added non-linear curves to the animations including shrinking, bumping and more.
 
-[Demo](https://www.youtube.com/watch?v=BR4bUwFZDS8)
 
-Yet Another Magic Lamp is a window minimization effect for KWin. Whenever a window
-is minimized, it'll get sucked down into the dock/panel. The main difference
-between this effect and the one shipped with KWin is that this effect is more
-"curvy". In addition to that, this effect works correctly with weird setups
-(e.g. the panel is between screens) and has more configuration options.
+This is a window minimization effect for KWin. Whenever a window
+is minimized, it'll get sucked down into the dock/panel, **with a
+curved animation**. The main difference between this effect and
+the original one is that this effect is more "curvy". In addition
+to that, this effect works correctly with weird setups (e.g. the
+panel is between screens) and has more configuration options.
 
 This is mostly eye-candy stuff. If you want to be more productive, consider
 using another window minimize animation (e.g. [Scale](https://store.kde.org/p/1267839/), etc).
 
 ### Installation
 
-#### Binary package
-
-On openSUSE Tumbleweed
-
-```sh
-sudo zypper ar obs://home:trmdi trmdi
-sudo zypper in -r trmdi kwin-effects-yaml
-```
-
-#### Build from source
+The only way to install it is to compile and install it by yourself.
 
 You will need the following dependencies to build this effect:
 * CMake
@@ -74,27 +65,7 @@ make
 sudo make install
 ```
 
-
-#### Building the effect against older Plasma versions
-
-If you want to build this effect against an older Plasma release, checkout
-the corresponding `Plasma/x.yz` branch, for example
-
-```sh
-git clone https://github.com/zzag/kwin-effects-yet-another-magic-lamp.git
-cd kwin-effects-yet-another-magic-lamp
-git checkout Plasma/5.20
-```
-
-
 ### Using the effect
 
 Go to System Settings > Desktop Behavior > Desktop Effects, and select
 "Yet Another Magic Lamp", then click Apply.
-
-### Contributing
-
-Any help is welcome. If you have suggestions how to improve this effect(e.g.
-different duration for each stage of the animation, etc), please create a new
-issue. If you'd like to contribute by implementing some feature, make sure
-you've run clang-format before creating a PR.
