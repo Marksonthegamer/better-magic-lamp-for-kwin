@@ -55,7 +55,7 @@ After you installed all the required dependencies, you can build
 the effect:
 
 ```sh
-git clone https://github.com/zzag/kwin-effects-yet-another-magic-lamp.git
+git clone https://github.com/Marksonthegamer/better-magic-lamp-for-kwin.git
 cd kwin-effects-yet-another-magic-lamp
 mkdir build && cd build
 cmake .. \
